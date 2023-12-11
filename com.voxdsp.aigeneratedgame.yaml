@@ -36,4 +36,4 @@ modules:
     sources:
       - type: git
         url: https://notabug.org/Vandarin/AIGeneratedGame.git
-        commit: 4f2fbb4b22be17f45d81627821e10ef372a76c21
+        commit: 663ac78465738657ee45cb65edbbbccf18aeeaab
