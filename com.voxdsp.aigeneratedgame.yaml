@@ -35,5 +35,5 @@ modules:
       - install -Dm 0644 flatpak/aigeneratedgame.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/aigeneratedgame.png
     sources:
       - type: git
-        url: https://notabug.org/Vandarin/AIGeneratedGame.git
-        commit: 05429f32af6016b6728230834733823da30eab45
+        url: https://github.com/mrbid/AIGeneratedGame
+        commit: b0038c708b741abce3f1fe96f1dcf56e654e9ce8
