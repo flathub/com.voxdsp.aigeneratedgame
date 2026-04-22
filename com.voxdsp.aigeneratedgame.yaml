@@ -1,6 +1,6 @@
 app-id: com.voxdsp.aigeneratedgame
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: aigeneratedgame
 rename-icon: aigeneratedgame
@@ -11,6 +11,10 @@ finish-args:
   - --socket=fallback-x11
   - --share=ipc
   - --device=dri
+cleanup:
+  - /include
+  - /lib/cmake
+  - /lib/pkgconfig
 modules:
   - name: glfw
     buildsystem: cmake-ninja
@@ -37,3 +41,5 @@ modules:
       - type: git
         url: https://github.com/mrbid/AIGeneratedGame
         commit: b0038c708b741abce3f1fe96f1dcf56e654e9ce8
+      - type: patch
+        path: fix-appdata.patch
